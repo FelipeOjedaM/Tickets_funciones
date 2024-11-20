@@ -84,7 +84,7 @@ const SlaRelatedData = () => {
       </section>
 
       <section className="worst-tickets">
-        <h2>tickets por horas de atraso</h2>
+        <h2>Tickets por horas de atraso</h2>
         <table className="tickets-table">
           <thead>
             <tr>
@@ -92,7 +92,7 @@ const SlaRelatedData = () => {
               <th>Titulo Ticket</th>
               <th>Status SLA</th>
               <th>Costo de Ticket original</th>
-              <th>fecha de Cierre Esperado</th>
+              <th>Fecha de Cierre Esperado</th>
               <th>Horas de atraso</th>
               <th>Costo Estimado Del ticket</th>
             </tr>
@@ -107,7 +107,7 @@ const SlaRelatedData = () => {
                 </span></td>
                 <td>${getResumenMonto(ticket.monto)}</td>
                 <td>{ticket.dates.find(date => date.type === 'cierre_esperado')?.date}</td>
-                <td>{ticket.horas_atraso}hrs</td>
+                <td>{ticket.horas_atraso}Hrs</td>
                 <td>${getResumenMonto(calcMonto_final(ticket.monto, ticket.horas_atraso))}</td>
               </tr>
             ))}
