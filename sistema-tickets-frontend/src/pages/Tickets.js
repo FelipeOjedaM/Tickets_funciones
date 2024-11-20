@@ -64,7 +64,7 @@ const Tickets = () => {
       comentario: '',
       prioridad: '',
     }));
-  }; // manjea el cerrar el modal
+  }; // manejea el cerrar el modal
 
   useEffect(() => {
     const fetchData = async (url, setState) => {
@@ -193,7 +193,7 @@ const Tickets = () => {
 
       {/* Renderiza información general si no hay categoría seleccionada */}
       {isNaN(selectedCategoryId) ? (
-        <p>infro general</p>
+        <p>Info General</p>
       ) : (
         // Renderiza las instrucciones de la guía seleccionada
         guiaContenido && (
